@@ -26,7 +26,7 @@ Program VSM ini bekerja melalui beberapa tahapan berikut:
     - **Pembersihan/clear:** Menghapus tanda baca dan menghapus stopwords (kata hubung/umum dalam bahasa Inggris).
     - **Stemming:** Mengubah setiap kata ke bentuk dasarnya (misal: "retrieval" menjadi "retriev") menggunakan metode Porter Stemmer.
     - **Perhitungan Bobot (TF-IDF):** 
-      - **TF (Term Frequency):** Menghitung frekuensi kemunculan setiap term dalam dokumen, dihitung menggunakan logaritmik ($1 + \log(TF)$).
+      - **TF (Term Frequency):** Menghitung frekuensi kemunculan setiap term dalam dokumen, dihitung menggunakan logaritmik ( $1 + \log(TF)$ ).
       - **IDF (Inverse Document Frequency):** Menghitung tingkat kepentingan suatu term. Semakin jarang kata muncul di dokumen lain, semakin tinggi nilai IDF-nya.
       - **TF-IDF:** Mengalikan bobot TF dan IDF.
     - **Cosine Similarity:** Program mengubah setiap dokumen dan query menjadi representasi vektor berdasarkan bobot TF-IDF. Kemudian program menghitung tingkat kemiripan antara dokumen dan query menggunakan Cosine Similarity (mengukur nilai kosinus sudut antar vektor). Dokumen kemudian akan diurutkan berdasarkan skor kemiripan dari yang paling tinggi ke rendah.
